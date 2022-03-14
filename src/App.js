@@ -40,11 +40,11 @@ function App() {
         <Alert alert={alert} />
         <Switch>
           <Route exat path="/about">
-            <About />
+            <About mode={mode} />
           </Route>
 
           <Route exat path="/">
-            <TextForm showAlert={showAlert} heading="Enter the text analyze below" mode={mode}/>
+            <TextForm showAlert={showAlert} heading="Enter the text analyze below" mode={mode} />
           </Route>
         </Switch>
       </Router>
